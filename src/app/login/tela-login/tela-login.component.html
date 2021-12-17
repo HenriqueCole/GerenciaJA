@@ -1,7 +1,7 @@
 <div>
   <p>Nome</p>
-  <input type='text'>
+  <input type='text' [(ngModel)]="user">
   <p>Passaword</p>
-  <input type='password'>
-  <button>Login</button>
+  <input type='password' [(ngModel)]="password">
+  <button (click)="logar()">Login</button>
 </div>
