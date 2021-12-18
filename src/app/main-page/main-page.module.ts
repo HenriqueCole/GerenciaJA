@@ -6,6 +6,7 @@ import { ProdutosComponent } from './produtos/produtos.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { LoginModule } from 'src/app/login/login.module';
 import { RouterModule } from '@angular/router';
+import { ProdutoComponent } from './produto/produto.component';
 
 @NgModule({
   imports: [
@@ -16,6 +17,18 @@ import { RouterModule } from '@angular/router';
         path: 'pedidos',
         component: PedidosComponent,
         canActivate: []
+      },
+      {
+        path: 'produtos', children: [
+          {
+            path: '', 
+            component: ProdutosComponent
+          },
+          {
+            path: 'produto',
+            component: ProdutoComponent
+          }
+        ]
       }
     ])
   ],

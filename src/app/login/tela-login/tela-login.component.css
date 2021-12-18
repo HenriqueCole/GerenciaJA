@@ -1,6 +1,52 @@
 *{
     font-family: sans-serif;
     font-weight: 700;
-    font-size: 20px;
 }
 
+button{
+    display: block;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    border: #00000069 solid 1px;
+    background-color: #2da44e;
+    border-radius: 7px;
+    font-size: 17px;
+    color: white;
+    height: 32px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button:hover{
+    display: block;
+    margin: 20px 0px 0px 0px;
+    width: 100%;
+    border: #00000069 solid 1px;
+    background-color: #1a8b3a;
+    border-radius: 7px;
+    font-size: 17px;
+    color: white;
+    height: 32px;
+    cursor: pointer;
+}
+
+div{
+    padding: 16px;
+    border-radius: 10px;
+    margin: 86px 0px 0px 0px;
+    background-color: rgb(10 10 48);
+    box-shadow: grey 0px 0px 5px 1px;
+}
+
+p{
+    color: white;
+    font-size: 15px;
+}
+
+input{
+    border-radius: 6px;
+    box-shadow: grey 0px 0px 7px 2px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}

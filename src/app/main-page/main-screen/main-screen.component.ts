@@ -19,5 +19,9 @@ export class MainScreenComponent implements OnInit {
   goToOrders(){
     this.router.navigate(['/pedidos'])
   }
+  
+  abrirProduto(){
+    this.router.navigate(['/produtos'])
+  }
 
 }
