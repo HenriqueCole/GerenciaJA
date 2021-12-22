@@ -1,9 +1,9 @@
 <div>
-  List of products!
+  <p>List of products!</p>
 
   <div *ngFor="let produto of listaProdutos">
-    Produto de id: {{produto}}
-    <button (click)="abrirProduto(produto)">
+    Product's name: {{produto}}
+    <button (click)="OpenProduct(produto)">
       Access
     </button>
   </div>

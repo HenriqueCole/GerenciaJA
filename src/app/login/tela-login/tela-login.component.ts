@@ -10,7 +10,7 @@ export class TelaLoginComponent implements OnInit {
 
   users = [
     {userName: 'Henrique Cole', password: '123'},
-    {userName: 'Leonardo Raffaeli', password: '456'},
+    {userName: 'Leonardo Rafaelli', password: '456'},
     {userName: 'Bruno Verbinnen', password: '789'}
   ]
 

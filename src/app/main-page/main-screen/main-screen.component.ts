@@ -16,12 +16,11 @@ export class MainScreenComponent implements OnInit {
   ngOnInit() {
   }
 
-  goToOrders(){
-    this.router.navigate(['/pedidos'])
-  }
-  
   abrirProduto(){
     this.router.navigate(['/produtos'])
   }
 
+  goToOrders(){
+    this.router.navigate(['/pedidos'])
+  }
 }

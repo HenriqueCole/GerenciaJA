@@ -1,0 +1,14 @@
+*{
+    color: white;
+    font-family: sans-serif;
+}
+
+button{
+    color: black;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 700;
+    font-size: 20px;
+}

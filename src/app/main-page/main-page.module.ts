@@ -4,34 +4,21 @@ import { PedidosComponent } from './pedidos/pedidos.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ProdutosComponent } from './produtos/produtos.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
-import { LoginModule } from 'src/app/login/login.module';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ProdutoComponent } from './produto/produto.component';
+import { KartComponent } from './kart/kart.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    LoginModule,
     RouterModule.forRoot([
       {
-        path: 'pedidos',
-        component: PedidosComponent,
+        path: 'produto',
+        component: ProdutoComponent,
         canActivate: []
-      },
-      {
-        path: 'produtos', children: [
-          {
-            path: '', 
-            component: ProdutosComponent
-          },
-          {
-            path: 'produto',
-            component: ProdutoComponent
-          }
-        ]
       }
     ])
   ],
-  declarations: [PedidosComponent, ClientesComponent, ProdutosComponent, MainScreenComponent]
+  declarations: [PedidosComponent, ClientesComponent, ProdutosComponent, MainScreenComponent, ProdutoComponent, KartComponent]
 })
 export class MainPageModule { }

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class ProdutosComponent implements OnInit {
   
   listaProdutos = [
-    1, 3, 58, 43, 41, 4343, 4040, 38
+    'iPhone', 'Computador', 'Tênis', 'Drone', 'Lamborghini', 'Ferrari'
   ]
 
   constructor(
@@ -19,12 +19,12 @@ export class ProdutosComponent implements OnInit {
   ngOnInit() {
   }
 
-  abrirProduto(produto) {
-    this.router.navigate(['/produto', produto])
+  OpenProduct(produto) {
+    this.router.navigate(['/produtos/' + produto])
   }
 
   voltarParaMain(){
-    this.router.navigate(['/'])
+    this.router.navigate(['/main-screen'])
   }
 
 }
