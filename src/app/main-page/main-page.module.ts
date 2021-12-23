@@ -7,6 +7,7 @@ import { MainScreenComponent } from './main-screen/main-screen.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ProdutoComponent } from './produto/produto.component';
 import { KartComponent } from './kart/kart.component';
+import { GerenciarProdutosComponent } from './gerenciar-produtos/gerenciar-produtos.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { KartComponent } from './kart/kart.component';
       }
     ])
   ],
-  declarations: [PedidosComponent, ClientesComponent, ProdutosComponent, MainScreenComponent, ProdutoComponent, KartComponent]
+  declarations: [PedidosComponent, ClientesComponent, ProdutosComponent, MainScreenComponent, ProdutoComponent, KartComponent, GerenciarProdutosComponent]
 })
 export class MainPageModule { }

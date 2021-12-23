@@ -2,12 +2,12 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-produtos',
-  templateUrl: './produtos.component.html',
-  styleUrls: ['./produtos.component.css']
+  selector: 'app-gerenciar-produtos',
+  templateUrl: './gerenciar-produtos.component.html',
+  styleUrls: ['./gerenciar-produtos.component.css']
 })
-export class ProdutosComponent implements OnInit {
-  
+export class GerenciarProdutosComponent implements OnInit {
+
   listaProdutos = [
     'iPhone', 'Computador', 'Tênis', 'Drone', 'Lamborghini', 'Ferrari'
   ]
@@ -26,9 +26,4 @@ export class ProdutosComponent implements OnInit {
   voltarParaMain(){
     this.router.navigate(['/main-screen'])
   }
-
-  editarProdutos(){
-    this.router.navigate(['/gerenciarProdutos'])
-  }
-
 }

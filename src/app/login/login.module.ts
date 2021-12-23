@@ -8,6 +8,7 @@ import { ProdutosComponent } from '../main-page/produtos/produtos.component';
 import { PedidosComponent } from '../main-page/pedidos/pedidos.component';
 import { ProdutoComponent } from '../main-page/produto/produto.component';
 import { KartComponent } from '../main-page/kart/kart.component';
+import { GerenciarProdutosComponent } from '../main-page/gerenciar-produtos/gerenciar-produtos.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { KartComponent } from '../main-page/kart/kart.component';
       },
       { path: 'produtos', children: [
         {path: '', component: ProdutosComponent},
-        {path: ':id', component: ProdutoComponent}
+        {path: ':id', component: ProdutoComponent},
+        {path: '', component: GerenciarProdutosComponent}
       ]},
       { path: 'produto', children: [
         {path: ':id', component: ProdutoComponent},
@@ -34,7 +36,7 @@ import { KartComponent } from '../main-page/kart/kart.component';
       }
     ])
   ],
-  declarations: [TelaLoginComponent, MainScreenComponent, ProdutosComponent, PedidosComponent, ProdutoComponent, KartComponent],
+  declarations: [TelaLoginComponent, MainScreenComponent, ProdutosComponent, PedidosComponent, ProdutoComponent, KartComponent, GerenciarProdutosComponent],
   exports: [TelaLoginComponent]
 })
 export class LoginModule { }

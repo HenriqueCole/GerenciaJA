@@ -1,13 +1,11 @@
 <div>
-  <p>List of products!</p>
-
+  <p>Edit of the products!</p>
   <div *ngFor="let produto of listaProdutos">
     Product's name: {{produto}}
     <button (click)="OpenProduct(produto)">
-      Edit
+      Access
     </button>
   </div>
   <button class="back" (click)="voltarParaMain()">Back</button>
-  <button class="edit" (click)="editarProdutos()">Edit Products</button>
-
 </div>
+
