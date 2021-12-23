@@ -23,4 +23,8 @@ export class MainScreenComponent implements OnInit {
   goToOrders(){
     this.router.navigate(['/pedidos'])
   }
+
+  voltar(){
+    this.router.navigate(['/'])
+  }
 }

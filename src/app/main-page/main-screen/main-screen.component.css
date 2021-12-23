@@ -1,0 +1,42 @@
+button{
+    display: grid;
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+    border: none;
+    color: white;
+    background-color: #06c;
+    height: 35px;
+    width: 93px;
+    font-size: 18px;
+    border-radius: 53px;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+    cursor: pointer;
+}
+button:hover,
+button:focus {
+  background: #06c;
+  transform: translateX(10px) scale(1);
+  
+}
+
+.back{
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+    border: none;
+    color: white;
+    background-color: rgb(226, 19, 19);
+    height: 35px;
+    width: 93px;
+    font-size: 18px;
+    border-radius: 53px;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+    cursor: pointer;
+}
+.back:hover,
+.back:focus {
+    background-color: rgb(226, 19, 19);
+  transform: translateX(10px) scale(1);
+  
+}
