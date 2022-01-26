@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class ProdutosComponent implements OnInit {
   
   listaProdutos = [
-    'iPhone', 'Computador', 'Tênis', 'Drone', 'Lamborghini', 'Ferrari'
+    {nome: 'iPhone'}, {nome:'Computador'}, {nome:'Tênis'}, {nome:'Drone'}, {nome:'Lamborghini'},{ nome:'Ferrari'}
   ]
 
   constructor(
@@ -17,6 +17,7 @@ export class ProdutosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    localStorage.setItem("orders", JSON.stringify(this.listaProdutos))
   }
 
   OpenProduct(produto) {
@@ -29,6 +30,11 @@ export class ProdutosComponent implements OnInit {
 
   editarProdutos(){
     this.router.navigate(['/gerenciarProdutos'])
+  }
+
+  AddToKart(index){
+    console.log(index)
+    localStorage.setItem("orders", JSON.stringify(this.listaProdutos[index]))
   }
 
 }

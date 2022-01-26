@@ -43,3 +43,21 @@ p{
     font-weight: 700;
     font-size: 20px;
 }
+
+.kart{
+    align-items: center;
+    margin: 5px 0px 0px 0px;
+    border: none;
+    color: white;
+    background-color: rgb(62, 168, 29);
+    height: 29px;
+    width: 104px;
+    font-size: 17px;
+    border-radius: 53px;
+    transition: -webkit-transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+    -webkit-transform: translateX(0) scale(1);
+    transform: translateX(0) scale(1);
+    cursor: pointer;
+}

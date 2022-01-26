@@ -14,6 +14,8 @@ export class PedidosComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    console.log(this.listOfProducts)
   }
 
+  listOfProducts = JSON.parse(localStorage.getItem("orders"))
 }
